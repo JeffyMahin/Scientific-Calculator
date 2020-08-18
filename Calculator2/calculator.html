@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <h1>CALCULATOR</h1>
+
+    <div class="whole_body">
+
+        <div class="head">
+            <input type="text" id="result" maxlength="30">
+        </div>
+
+        <div class="cal_body">
+
+
+
+                <div>
+                    <input type="button" class="btn" value="sin" onclick="clickNum('sin(')">
+                    <input type="button" class="btn" value="cos" onclick="clickNum('cos(')">
+                    <input type="button" class="btn" value="tan" onclick="clickNum('tan(')">
+                    <input type="button" class="btn" value="x^y" onclick="clickNum('**')">
+                    <input type="button" class="btn" value="x^2" onclick="clickNum('**2')">
+                    <input type="button" class="btn" value="x!" onclick="factorialNum()">
+                </div>
+
+                <div>
+                    <input type="button" class="btn" value="PI" onclick="clickNum('3.14159')">
+                    <input type="button" class="btn" value="e^n" onclick="clickNum('e(')">
+                    <input type="button" class="btn" value="log">
+                    <input type="button" class="btn" value="ln" onclick="clickNum('log(')">
+                    <input type="button" class="btn" value="√x" onclick="clickNum('sq(')" >
+                    <input type="button" class="btn" value="∛x" onclick="clickNum('cbrt(')">
+                </div>
+
+
+
+                <div>
+                    <input type="button" class="btn btn-style4" style="color: black" value="7" onclick="clickNum('7')">
+                    <input type="button" class="btn btn-style4" style="color: black" value="8" onclick="clickNum('8')">
+                    <input type="button" class="btn btn-style4" style="color: black" value="9" onclick="clickNum('9')">
+                    <input type="button" class="btn btn-style" value="DEL" onclick="deleteNumber()">
+                    <input type="button" class="btn btn-style2" value="C" style="width:138px" onclick="clearResult()">
+                </div>
+
+                <div>
+                    <input type="button" class="btn btn-style4" style="color: black" value="4" onclick="clickNum('4')">
+                    <input type="button" class="btn btn-style4" style="color: black" value="5" onclick="clickNum('5')">
+                    <input type="button" class="btn btn-style4" style="color: black" value="6" onclick="clickNum('6')">
+                    <input type="button" class="btn btn-style" value="X" style="width:107px" onclick="clickNum('*')">
+                    <input type="button" class="btn btn-style" value="/" style="width:100px" onclick="clickNum('/')">
+
+
+                </div>
+
+                <div>
+                    <input type="button" class="btn btn-style4" style="color: black" value="1" onclick="clickNum('1')">
+                    <input type="button" class="btn btn-style4" style="color: black" value="2" onclick="clickNum('2')">
+                    <input type="button" class="btn btn-style4" style="color: black" value="3" onclick="clickNum('3')">
+                    <input type="button" class="btn btn-style" value="+" style="width:107px" onclick="clickNum('+')">
+                    <input type="button" class="btn btn-style" value="-" style="width:100px" onclick="clickNum('-')">
+                </div>
+
+                <div>
+                    <input type="button" class="btn btn-style4" style="color: black" value="0" onclick="clickNum('0')">
+                    <input type="button" class="btn btn-style4" style="color: black" value="." onclick="clickNum('.')">
+                    <input type="button" class="btn" value="(" onclick="clickNum('(')">
+                    <input type="button" class="btn" value=")" onclick="clickNum(')')">
+                    <input type="button" class="btn btn-style3" value="=" style="width:138px" onclick="calculate()">
+                </div>
+
+
+
+        </div>
+        
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="cal.js"></script>-->
+    <script src="cal2.js"></script>
+
+</body>
+
+</html>
